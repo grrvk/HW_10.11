@@ -1,0 +1,15 @@
+/Users/vika/Projects/HW_10.11/HW_5/bin/Debug/net6.0/HW_5
+/Users/vika/Projects/HW_10.11/HW_5/bin/Debug/net6.0/HW_5.deps.json
+/Users/vika/Projects/HW_10.11/HW_5/bin/Debug/net6.0/HW_5.runtimeconfig.json
+/Users/vika/Projects/HW_10.11/HW_5/bin/Debug/net6.0/HW_5.dll
+/Users/vika/Projects/HW_10.11/HW_5/bin/Debug/net6.0/HW_5.pdb
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.csproj.AssemblyReference.cache
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.AssemblyInfoInputs.cache
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.AssemblyInfo.cs
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.csproj.CoreCompileInputs.cache
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.dll
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/refint/HW_5.dll
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.pdb
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/HW_5.genruntimeconfig.cache
+/Users/vika/Projects/HW_10.11/HW_5/obj/Debug/net6.0/ref/HW_5.dll
