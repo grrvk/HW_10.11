@@ -41,6 +41,14 @@ namespace AbstractFactory
             }
         }
 
+        abstract class Seat
+        {
+            public virtual void Descr()
+            {
+
+            }
+        }
+
 
         abstract class Engine {
             public virtual void GetPower()
@@ -72,11 +80,36 @@ namespace AbstractFactory
             }
         }
 
+        class MersedesSeats : Seat
+        {
+            public override void Descr()
+            {
+                Console.WriteLine("Mersedes seats");
+            }
+        }
+
+        class   FordSeats : Seat
+        {
+            public override void Descr()
+            {
+                Console.WriteLine("Ford seats");
+            }
+        }
+
+        class ToyotaSeats : Seat
+        {
+            public override void Descr()
+            {
+                Console.WriteLine("Toyota seats");
+            }
+        }
+
 
 
         interface ICarFactory { 
             Car CreateCar();
             Engine CreateEngine();
+            Seat Descr();
         }
 
 
@@ -90,6 +123,10 @@ namespace AbstractFactory
             Engine ICarFactory.CreateEngine()
             {
                 return new FordEngine();
+            }
+            Seat ICarFactory.Descr()
+            {
+                return new FordSeats();
             }
         }
 
@@ -106,6 +143,10 @@ namespace AbstractFactory
             {
                 return new ToyotaEngine();
             }
+            Seat ICarFactory.Descr()
+            {
+                return new ToyotaSeats();
+            }
         }
 
         class MersedesFactoty : ICarFactory
@@ -118,6 +159,10 @@ namespace AbstractFactory
             {
                 return new MersedesEngine();
             }
+            Seat ICarFactory.Descr()
+            {
+                return new MersedesSeats();
+            }
         }
 
         static void Main(string[] args)
@@ -128,6 +173,8 @@ namespace AbstractFactory
             myCar.Info();
             Engine myEngine = carFactory.CreateEngine();
             myEngine.GetPower();
+            Seat mySeat = carFactory.Descr();
+            mySeat.Descr();
 
             carFactory = new FordFactory();
 
@@ -135,6 +182,8 @@ namespace AbstractFactory
             myCar.Info();
             myEngine = carFactory.CreateEngine();
             myEngine.GetPower();
+            mySeat = carFactory.Descr();
+            mySeat.Descr();
 
             carFactory = new MersedesFactoty();
 
@@ -142,6 +191,8 @@ namespace AbstractFactory
             myCar.Info();
             myEngine = carFactory.CreateEngine();
             myEngine.GetPower();
+            mySeat = carFactory.Descr();
+            mySeat.Descr();
 
             Console.ReadKey();
         }

@@ -24,6 +24,10 @@ namespace PrototypeFigure
             figure.GetInfo();
             clonedFigure.GetInfo();
 
+            figure = new Romb(4);
+            clonedFigure = figure.Clone();
+            figure.GetInfo();
+            clonedFigure.GetInfo();
             Console.Read();
         }
     }
@@ -85,6 +89,23 @@ namespace PrototypeFigure
         public void GetInfo()
         {
             Console.WriteLine("Трикутник зі сторонами {0}, {1} та {2}", firstSide, secondSide, thirdSide);
+        }
+    }
+
+    class Romb : IFigure
+    {
+        int side;
+        public Romb(int s)
+        {
+            side = s;
+        }
+        public IFigure Clone()
+        {
+            return new Romb(this.side);
+        }
+        public void GetInfo()
+        {
+            Console.WriteLine("Ромб зі стороною {0}", side);
         }
     }
 }
